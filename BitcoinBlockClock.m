@@ -5,7 +5,8 @@
     
 static NSString * const bitcoinClockModule = @"com.bitcoinblockclock";
 
-    // the bulk of this code taken from / created by www.github.com/chrstphrknwtn
+    // The bulk of this code was copied from, and Copyright © 2022 Christopher Newton, www.github.com/chrstphrknwtn
+    // Used here with permission. License: https://github.com/chrstphrknwtn/word-clock-screensaver/blob/master/license
     
 - (id)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview {
     if (!(self = [super initWithFrame:frame isPreview:isPreview])) return nil;
