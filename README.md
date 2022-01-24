@@ -1,7 +1,7 @@
 # Bitcoin Block Clock
 macOS screensaver powered by mempool.space 's awesome API
 
-This saver requires an internet connection obviouly, otherwise nothing interesting is displayed.
+This saver requires an internet connection, otherwise nothing interesting is displayed.
 
 ## Info
 
