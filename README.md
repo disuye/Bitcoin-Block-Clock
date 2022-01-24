@@ -3,6 +3,8 @@ macOS screensaver powered by mempool.space 's awesome API
 
 This saver requires an internet connection, otherwise nothing interesting is displayed.
 
+![screenshot png](screenshot.png)
+
 ## Info
 
 Includes a tweaked version of [GeoSans Light](https://www.dafont.com/geo-sans-light.font) font, created by Manfred Klein. I had some kerning issues, so converted the TTF to WOFF2 using 'Font-face Generator' on Font Squirrel.
