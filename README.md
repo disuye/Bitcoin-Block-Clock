@@ -7,7 +7,7 @@ This saver requires an internet connection, otherwise nothing interesting is dis
 
 Includes a tweaked version of [GeoSans Light](https://www.dafont.com/geo-sans-light.font) font, created by Manfred Klein. I had some kerning issues, so converted the TTF to WOFF2 using 'Font-face Generator' on Font Squirrel.
 
-I took a chunk of code from [Word Clock Screensaver](https://github.com/chrstphrknwtn/word-clock/) -> .xib + .h + .m to get this initial version pu and running.
+I took a chunk of code from [Word Clock Screensaver](https://github.com/chrstphrknwtn/word-clock/) -> .xib + .h + .m to get this initial version up and running.
 
 ## Install
 
