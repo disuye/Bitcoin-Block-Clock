@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'geosanslightregular';
+    src: url('font/geosanslight_v3-webfont.woff2') format('woff2'),
+    url('font/geosanslight_v3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GeoSans Light font created by Manfred Klein. I had some kerning issues, so converted the TTF to WOFF2 using 'Font-face Generator' on Font Squirrel. */
+/* Font Squirrel Font-face Generator Configuration File settings:
+
+{"mode":"expert","formats":["woff","woff2"],"tt_instructor":"default","fix_gasp":"xy","fix_vertical_metrics":"Y","metrics_ascent":"","metrics_descent":"","metrics_linegap":"","add_spaces":"Y","add_hyphens":"Y","fallback":"none","fallback_custom":"100","options_subset":"basic","subset_custom":"","subset_custom_range":"","subset_ot_features_list":"","css_stylesheet":"stylesheet.css","filename_suffix":"-webfont","emsquare":"2048","spacing_adjustment":"0"}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    text-rendering:geometricPrecision;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 0;
+    margin: 0;
+    color: white;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* block clock text styling */
+
+#block_height {
+    z-index: 1;
+    width: 100%;
+    padding-right: 3vw;
+    text-align: right;
+    font-family: 'geosanslightregular', 'GeosansLight', monospace;
+    font-size: 12vw;
+    color: white;
+    opacity: 0.9;
+}
+
+/* transaction ticker graphic */
+
+#txticker {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    margin-top: 4vw;
+    top: 50%;
+    text-align: center;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAAXNSR0IArs4c6QAAAChJREFUGFdjZEADn2YyzGREFgMJ8KUzpMMFYQIgRWBBZAGwILoASBAAv/4OKoftWbgAAAAASUVORK5CYII=) repeat;
+    }
+ 
+#txid_alt {
+    font-family: 'Courier New', 'Courier', monospace;
+    color: darkorange;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+}
+
+/* transaction, mempool, block info placement and styling */
+
+#transactions {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.2vw;
+    max-width:33%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#localtime,
+#mempool_info,
+#block_data,
+#txid,
+#value,
+#fee,
+#vsize,
+.cursor,
+#status {
+    font-family: 'Courier New', 'Courier', monospace;
+    font-size: calc(4pt + 0.4vw);
+    color: orange;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity 1.0;
+    line-height: calc(4pt + 0.4vw);
+}
+
+/* make hyperlinks match regular text, based on parent styling */
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* visual fluff - flashing cursor animation */
+
+.cursor {
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes blink {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes "blink" {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes "blink" {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes "blink" {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity:1;
+    }
+}
+
+/* CSS END */
