@@ -14,7 +14,7 @@ const init = async () => {
     // ... and grab the current block's data, hash, etc.
 
     if (blocks){
-        const hash = await blocks.getBlocksTipHash();
+        const hash = await blocks.getBlockHeight({ height: blocksTipHeight });
         const blockNow = await blocks.getBlock({ hash });
         document.getElementById("block_data").textContent = "block: " + JSON.stringify(blockNow, undefined, 2).replace(/[^a-zA-Z0-9 \.\:\[\]\r\n\r\n]/g, "");
         clearTimeout(checkcnx); // Trash the looping page reload (checkcnx is first defined in index.html)
